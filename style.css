@@ -37,8 +37,10 @@ a {
   text-align: center;
   display: inline-block;
   vertical-align: top;
-  margin-left: 300px;
-  margin-right: 300px;
+  margin-left: 450px;
+  margin-right: 450px;
+  max-width: 700px;
+  min-width: 700px;
 }
 
 .calculator-bar {
@@ -46,7 +48,7 @@ a {
     margin-right: -12px;
 }
 
-.answer-text {
+#answer-text {
     margin-top: 7px;
     text-align: center;
     font-size: 30px;

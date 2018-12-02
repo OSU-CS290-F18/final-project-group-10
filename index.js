@@ -1,0 +1,58 @@
+var display = document.getElementById('answer-text');
+console.log("display text:", display.textContent);
+var calculator = document.getElementById('calculator');
+calculator.addEventListener('click', function(event){
+  handleClick(event.target);
+});
+
+function handleClick(btn){
+  var val = btn.value;
+  var id = btn.id;
+  var prevKey = calculator.dataset.prevKeyType;
+
+  if(id === 'numButton'){
+    if(display.textContent === '0' || prevKey === "op"){
+      display.textContent = val;
+    }
+    else{
+      display.textContent += val;
+    }
+    calculator.dataset.prevKeyType = 'num';
+  }
+  else if(id === 'opButton'){
+    calculator.dataset.prevKeyType = "op";
+    calculator.dataset.firstVal = display.textContent;
+    calculator.dataset.op = val;
+  }
+  else if(id === 'clearButton'){
+    display.textContent = '0';
+  }
+  else if(id === 'eqButton'){
+    var firstVal = calculator.dataset.firstVal;
+    var op = calculator.dataset.op;
+    var secondVal = display.textContent;
+    display.textContent = calculate(firstVal, op, secondVal);
+  }
+  console.log("display text: ", display.textContent);
+}
+
+function calculate(first, op, sec){
+  var result = '';
+  if(op === '+'){
+    result = parseFloat(first) + parseFloat(sec);
+  }
+  else if(op === '-'){
+    result = parseFloat(first) - parseFloat(sec);
+  }
+  else if(op === '*'){
+    result = parseFloat(first) * parseFloat(sec);
+  }
+  else if(op === '/'){
+    result = parseFloat(first) / parseFloat(sec);
+  }
+  else{
+    result = parseFloat(first) % parseFloat(sec);
+  }
+
+  return result;
+}

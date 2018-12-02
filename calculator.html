@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
     	<link rel="stylesheet" href="style.css">
+			<script src = "index.js" charset="utf-8" defer></script>
 		<title>Calculator</title>
 	</head>
 	<body>
@@ -19,31 +20,31 @@
    </nav>
 
 	<div class = "calculator-bar" id="answer-bar">
-		<p class = "answer-text"> 3 / 1 = 3</p>
+		<p id = "answer-text">0</p>
 	</div>
 
-	<div class="calculator" id="outline">
+	<div class="calculator" id="calculator">
 
-		<button id="LeftPButton" class="button">(</button>
-		<button id="RightPButton" class="button">)</button>
-		<button id="ModButton" class="button">%</button>
-		<button id="ClearButton" class="button">C</button>
-		<button id="7Button" class="button">7</button>
-		<button id="8Button" class="button">8</button>
-		<button id="9Button" class="button">9</button>
-		<button id="DivButton" class="button">/</button>
-		<button id="4Button" class="button">4</button>
-		<button id="5Button" class="button">5</button>
-		<button id="6Button" class="button">6</button>
-		<button id="MultButton" class="button">x</button>
-		<button id="1Button" class="button">1</button>
-		<button id="2Button" class="button">2</button>
-		<button id="3Button" class="button">3</button>
-		<button id="MinusButton" class="button">-</button>
-		<button id="0Button" class="button">0</button>
-		<button id="PeriodButton" class="button">.</button>
-		<button id="EqButton" class="button">=</button>
-		<button id="PlusButton" class="button">+</button>
+		<button id="pButton" class="button" value="(">(</button>
+		<button id="pButton" class="button" value=")">)</button>
+		<button id="opButton" class="button" value="%">%</button>
+		<button id="clearButton" class="button" value="c">C</button>
+		<button id="numButton" class="button" value = "7">7</button>
+		<button id="numButton" class="button" value="8">8</button>
+		<button id="numButton" class="button" value="9">9</button>
+		<button id="opButton" class="button" value="/">/</button>
+		<button id="numButton" class="button" value="4">4</button>
+		<button id="numButton" class="button" value="5">5</button>
+		<button id="numButton" class="button" value="6">6</button>
+		<button id="opButton" class="button" value="*">x</button>
+		<button id="numButton" class="button" value="1">1</button>
+		<button id="numButton" class="button" value="2">2</button>
+		<button id="numButton" class="button" value="3">3</button>
+		<button id="opButton" class="button" value="-">-</button>
+		<button id="numButton" class="button" value="0">0</button>
+		<button id="decButton" class="button" value=".">.</button>
+		<button id="eqButton" class="button" value="=">=</button>
+		<button id="opButton" class="button" value="+">+</button>
     </div>
 	</body>
 </html>
