@@ -43,14 +43,12 @@ body{
 
 .calculator {
   height: 500px;
+  width: 700px;
   padding: 10px;
   text-align: center;
-  display: inline-block;
-  vertical-align: top;
-  margin-left: 306px;
-  margin-right: 450px;
-  max-width: 700px;
-  min-width: 700px;
+  margin: 0 auto;
+  /* margin-left: 306px;
+  margin-right: 450px; */
   background-color: #696969;
 }
 
@@ -112,7 +110,6 @@ body{
 }
 
 .results-outline {
-    /* border: 1px solid blue; */
     width: 770px;
     margin: 0 auto;
   }
