@@ -100,15 +100,17 @@ body{
 }
 
 .button:hover {
-    background-color: #23788a;
+    background-color: #D3D3D3;
+    color: black;
 }
 
-.results-history {
+.results-title {
     text-align: center;
     font-size: 40px;
     text-decoration: underline;
     margin-top: 20px;
 }
+
 
 .results-text {
     text-align: center;
