@@ -41,7 +41,7 @@ body{
 }
 
 .calculator {
-  width: 900px;
+  width: 700px;
   padding: 10px;
   text-align: center;
   margin: 10px auto;
@@ -76,8 +76,8 @@ body{
   border: 1px solid #ababab;
   border-radius: 5px;
   display: inline-block;
-  height: 90px;
-  width: 170px;
+  height: 70px;
+  width: 130px;
 }
 
 #opButton {
