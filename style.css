@@ -42,11 +42,10 @@ body{
 }
 
 .calculator {
-  height: 500px;
-  width: 700px;
+  width: 900px;
   padding: 10px;
   text-align: center;
-  margin: 0 auto;
+  margin: 10px auto;
   background-color: #696969;
 }
 
@@ -79,8 +78,8 @@ body{
   border: 1px solid #ababab;
   border-radius: 5px;
   display: inline-block;
-  height: 70px;
-  width: 130px;
+  height: 100px;
+  width: 200px;
 }
 
 #opButton {
