@@ -112,12 +112,14 @@ body{
 }
 
 .results-outline {
-    height: auto;
-    width: auto;
+    position: fixed;
+    left: 31%;
+    right: 31%;
+    width: 800px;
   }
 
 .results-text {
-     display: inline-block;
+    display: inline-block;
     text-align: center;
     font-size: 20px;
     margin-right: 20px;
@@ -125,10 +127,8 @@ body{
 
 #refresh-button {
     position: fixed;
-    top: 50%;
-    left: 50%;
-    bottom: 50%;
-  	right: 50%;
+    bottom: 3%;
+  	right: 2%;
     background-color: #FF8C00;
     color: black;
     font-size: 25px;
