@@ -112,15 +112,13 @@ body{
 }
 
 .results-outline {
-    position: fixed;
-    left: 23%;
-    right: 23%;
-    width: 800px;
+    /* border: 1px solid blue; */
+    width: 770px;
+    margin: 0 auto;
   }
 
 .results-text {
     display: inline-block;
-    text-align: center;
     font-size: 20px;
     margin-right: 20px;
 }
