@@ -111,10 +111,17 @@ body{
     margin-top: 20px;
 }
 
+.results-outline {
+    height: 500px;
+    width: 500px;
+    margin-left: 50%;
+}
 
 .results-text {
+    display: inline-block;
     text-align: center;
     font-size: 20px;
+    margin-right: 20px;
 }
 
 #refresh-button {
