@@ -1,8 +1,7 @@
 <div class = "results-title">Results</div>
 <div class = "results-outline">
-    <p class = results-text>
-      {{result}}
-    </p>
+  {{#each result_text}}
+    <p class = results-text>{{text}}</p>
 </div>
 
 <button type="refresh-button" id="refresh-button">&#x27F3;</button>
