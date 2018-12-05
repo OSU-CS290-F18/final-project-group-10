@@ -64,7 +64,7 @@ body{
   border: 1px solid black;
   height: 50px;
   margin-right: -10px;
-  background-color: #D3D3D3
+  background-color: #D3D3D3;
 }
 
 .button {
@@ -89,6 +89,11 @@ body{
 }
 
 #pButton{
+  background-color: #D3D3D3;
+}
+
+#eqButton{
+  width: 283px;
   background-color: #D3D3D3;
 }
 
