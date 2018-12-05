@@ -38,6 +38,7 @@ function handleClick(btn){
 
 function calculate(first, op, sec){
   var result = '';
+
   if(op === '+'){
     result = parseFloat(first) + parseFloat(sec);
   }
@@ -49,6 +50,9 @@ function calculate(first, op, sec){
   }
   else if(op === '/'){
     result = parseFloat(first) / parseFloat(sec);
+  }
+  else if(op === '2nd'){
+    result = parseFloat(first) * parseFloat(first);
   }
   else{
     result = parseFloat(first) % parseFloat(sec);
