@@ -1,5 +1,23 @@
 [
   {
-    "result": ""
+    "formula": "x^2+y^2 = z^2"
+  }
+]
+
+[
+  {
+    "formula": "sec(x) = 1/cos(x)"
+  }
+]
+
+[
+  {
+    "formula": "csc(x) = 1/sin(x)"
+  }
+]
+
+[
+  {
+    "formula": "cot(x) = 1/tan(x)"
   }
 ]
