@@ -1,3 +1,7 @@
+h1 {
+  text-align: center;
+}
+
 .site-title {
     margin-top: -10px;
     margin-left: -10px;
@@ -102,22 +106,23 @@ body{
     color: black;
 }
 
-.results-title {
+.formulas-title {
     text-align: center;
     font-size: 40px;
     text-decoration: underline;
     margin-top: 20px;
 }
 
-.results-outline {
+.formulas-outline {
     width: 920px;
     margin: 0 auto;
   }
 
-.results-text {
+.formula-text {
     display: inline-block;
     font-size: 25px;
     margin-right: 20px;
+    margin: 0 auto;
 }
 
 #refresh-button {

@@ -10,7 +10,7 @@ function handleClick(btn){
   var id = btn.id;
   var prevKey = calculator.dataset.prevKeyType;
 
-  if(id === 'numButton'){
+  if(id === 'numButton' || id === 'decButton'){
     if(display.textContent === '0' || prevKey === "op"){
       display.textContent = val;
     }
@@ -31,7 +31,14 @@ function handleClick(btn){
     var firstVal = calculator.dataset.firstVal;
     var op = calculator.dataset.op;
     var secondVal = display.textContent;
-    display.textContent = calculate(firstVal, op, secondVal);
+    var answer = calculate(firstVal, op, secondVal);
+    //display.textContent = calculate(firstVal, op, secondVal);
+    display.textContent = answer;
+    //var eq = firstVal + " " + " " + op + " " + secondVal + " " + "=" + answer;
+    //results.insertOne({
+    //  eq: eq
+    //});
+    //displayAnswer(answer);
   }
   console.log("display text: ", display.textContent);
 }
@@ -60,3 +67,8 @@ function calculate(first, op, sec){
 
   return result;
 }
+
+//function displayAnswer(ans){
+//  var answerBar = document.getElementById('answer-text');
+
+//}
