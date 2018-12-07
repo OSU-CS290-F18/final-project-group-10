@@ -2,17 +2,18 @@ var path = require('path');
 var express = require('express');
 var exphbs = require('express-handlebars');
 var MongoClient = require('mongodb').MongoClient;
+var assert = require('assert');
 
-var mongoHost = process.env.MONGO_HOST;
-var mongoPort = process.env.MONGO_PORT || '27017';
-var mongoUsername = process.env.MONGO_USERNAME;
-var mongoPassword = process.env.MONGO_PASSWORD;
-var mongoDBName = process.env.MONGO_DB_NAME;
-// var mongoHost = "classmongo.engr.oregonstate.edu";
+// var mongoHost = process.env.MONGO_HOST;
 // var mongoPort = process.env.MONGO_PORT || '27017';
-// var mongoUsername = "cs290_vandelk";
-// var mongoPassword = "cs290_vandelk";
-// var mongoDBName = "cs290_vandelk";
+// var mongoUsername = process.env.MONGO_USERNAME;
+// var mongoPassword = process.env.MONGO_PASSWORD;
+// var mongoDBName = process.env.MONGO_DB_NAME;
+var mongoHost = "classmongo.engr.oregonstate.edu";
+var mongoPort = process.env.MONGO_PORT || '27017';
+var mongoUsername = "cs290_vandelk";
+var mongoPassword = "cs290_vandelk";
+var mongoDBName = "cs290_vandelk";
 
 var mongoURL = "mongodb://" +
   mongoUsername + ":" + mongoPassword + "@" + mongoHost + ":" + mongoPort +
@@ -44,7 +45,13 @@ app.get('/results', function(req, res, next){
   //   });
   // });
 });
-
-app.listen(port, function(){
-  console.log("==Server is listening on port", port);
+MongoClient.connect(mongoURL, function(client, err){
+  if(err){
+      throw err;
+  }
+  console.log("It worked!");
+  mongoDB = client.db(mongoDBName);
+  app.listen(port, function(){
+    console.log("==Server is listening on port", port);
+  });
 });
