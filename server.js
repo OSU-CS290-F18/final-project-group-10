@@ -45,13 +45,13 @@ app.get('/results', function(req, res, next){
   //   });
   // });
 });
-MongoClient.connect(mongoURL, function(client, err){
-  if(err){
-      throw err;
-  }
-  console.log("It worked!");
-  mongoDB = client.db(mongoDBName);
+//MongoClient.connect(mongoURL, function(client, err){
+//  if(err){
+//      throw err;
+//  }
+//  console.log("It worked!");
+//  mongoDB = client.db(mongoDBName);
   app.listen(port, function(){
     console.log("==Server is listening on port", port);
   });
-});
+//});
