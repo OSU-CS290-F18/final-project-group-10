@@ -2,16 +2,16 @@
 
 <body>
 <h1 class = "formulas-title">Formula Sheet</h1>
-<form method="post" action="addformula">
+<form class = formula method="post" action="addformula">
 <label>Enter formula to add</label><br>
 <input type="text" id="formula" name="formula"><br>
-<input type="submit" value="Add Formula">
+<input type="submit" id = "form" value="Add Formula">
 </form>
 
-<form method="post" action="rmformula">
+<form class = formula method="post" action="rmformula">
 <label>Enter formula to remove</label><br>
 <input type="text" id="rmformula" name="rmformula"><br>
-<input type="submit" value="Remove Formula">
+<input type="submit" id = "form" value="Remove Formula">
 </form>
 </body>
 
@@ -22,5 +22,3 @@
       {{/each}}
     </p>
 </div>
-
-<button id="refresh-button" action='rmall'>&#x27F3;</button>

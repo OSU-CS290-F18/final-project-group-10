@@ -106,6 +106,24 @@ body{
     color: black;
 }
 
+.formula {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+#form {
+  margin-top: 5px;
+  width: 173px;
+  background-color: #FF8C00;
+}
+
+#form:hover {
+  background-color: #D3D3D3;
+  color: #FF8C00;
+}
+
 .formulas-title {
     text-align: center;
     font-size: 40px;
@@ -115,34 +133,13 @@ body{
 
 .formulas-outline {
     width: 920px;
+    text-align: center;
     margin: 0 auto;
   }
 
 .formula-text {
-    display: inline-block;
+    text-align: center;
     font-size: 25px;
     margin-right: 20px;
     margin: 0 auto;
-}
-
-#refresh-button {
-    position: fixed;
-    bottom: 3%;
-  	right: 2%;
-    background-color: #FF8C00;
-    color: black;
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center;
-    width: 60px;
-  	height: 60px;
-  	box-shadow: 2px 2px 4px 2px black;
-}
-
-#refresh-button:hover {
-    background-color: #D3D3D3;
-    font-size: 30px;
-    font-weight: bold;
-    width: 65px;
-    height: 65px;
 }

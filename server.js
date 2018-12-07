@@ -5,7 +5,6 @@ var MongoClient = require('mongodb').MongoClient;
 var assert = require('assert');
 var bodyParser = require('body-parser');
 //var calculator = require('./calculator.handlebars');
-//var MongoClient = require('mongodb').MongoClient;
 
  /*var mongoHost = process.env.MONGO_HOST;
  var mongoPort = process.env.MONGO_PORT || '27017';
@@ -81,10 +80,20 @@ app.post('/addformula', function(req, res, next){
 });
 });*/
 
-/*app.post('/rmall', function(req,res,next){
+app.post('/rmall', function(req,res,next){
+  var item = {formula: req.body.formula};
   var formulaCollection = mongoDB.collection('formulas');
-  formulaCollection.deleteOne({"formula":'x+y'});
-});*/
+  formulaCollection.deleteOne(item,
+   function(err, result){
+    if(err){
+      res.status(500).send("Error deleting formula to DB");
+    }//else if(result.matchedCount > 0){
+      res.status(200).send("Success Delete");
+    //}else{
+    //  res.status(404).send("We couldn't fine what you are looking for");
+    //}
+});
+});
 
 MongoClient.connect(mongoURL, function(err, client){
   if(err){
